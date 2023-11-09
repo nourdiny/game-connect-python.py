@@ -15,9 +15,9 @@ def home():
     global loopTurn  # Declare loopTurn as a global variable
     x = request.form.get('x')
     if x is not None:
-        for i in range(8):
-            new_data = {"x" : int(x)+1 , "y" : 8-i , 'color': '#BF2232' if loopTurn else '#950740'}
-            new_data2 = {"x" : int(x)+1 , "y" : 8-i , 'color': '#950740' if loopTurn else '#BF2232'}
+        for i in range(7):
+            new_data = {"x" : int(x)+1 , "y" : 7-i , 'color': '#BF2232' if loopTurn else '#950740'}
+            new_data2 = {"x" : int(x)+1 , "y" : 7-i , 'color': '#950740' if loopTurn else '#BF2232'}
             if new_data not in list_arr and new_data2 not in list_arr:
                 list_arr.append(new_data)
                 break
